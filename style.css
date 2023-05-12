@@ -165,6 +165,12 @@ ion-icon:hover{
     text-decoration: none;
 }
 
+.about{
+    background-image: url('/assets/images/circle-shape1.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
 
 .about-us-container{
     width: 80%;
@@ -172,6 +178,54 @@ ion-icon:hover{
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.about-us span{
+    font-weight: bold;
+    color: orangered;
+}
+.about-us h1{
+    font-size: 3rem;
+}
+
+.about-us p{
+    margin: 24px 0px;
+}
+.about-us a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+.about-us-container .image-container img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.statistics{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.statistics .quantity{
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+.statistics .quantity h1{
+    font-size: 2rem;
+}
+.statistics .quantity p{
+    margin: 4px 0px;
+}
+
+.quantity ion-icon{
+    color: orangered;
+    font-size: 3.5rem;
 }
 
 
@@ -272,6 +326,49 @@ ion-icon:hover{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 12px;
+    }
+
+    .about-us-container{
+        text-align: center;
+        width: 80%;
+        margin: 64px auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
+    }
+
+    .statistics{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+    .statistics .quantity{
+        border: 1px solid orangered;
+        border-radius: 5px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .about-us h1{
+        font-size: 2rem;
+    }
+
+    .statistics .quantity h1{
+        font-size: 1.5rem;
+    }
+    .statistics .quantity p{
+        margin: 4px 0px;
+    }
+    
+    .quantity ion-icon{
+        color: orangered;
+        font-size: 3.5rem;
     }
 
   }
