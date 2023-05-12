@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1480px;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.logo{
+    font-size: 1.25rem;
+}
+
+button{
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    background-color: orangered;
+    padding: 8px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid orangered;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all 400ms;
+}
+button:hover{
+    font-family: 'Noto Sans', sans-serif;
+    color: orangered;
+    background-color: white;
+}
+
+nav{
+    padding: 8px 0px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.nav-item a:hover{
+    color: orangered;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hamburger-menu{
+    display: none;
+}
+
+ion-icon{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+ion-icon:hover{
+    color: orangered;
+}
+
+/*banner section*/
+
+.banner-container{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url('./assets/images/main-banner2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner{
+    width: 80%;
+    margin: auto;
+    padding: 12px 0px;
+}
+.banner-info{
+    width: 60%;
+}
+
+.sub-title{
+    margin-bottom: 16px;
+    color: orangered;
+    font-weight: bold;
+}
+
+.title{
+    color: white;
+    font-size: 3.5rem;
+
+}
+
+.description{
+    margin-top: 16px;
+    color: white;
+}
+.banner-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.solution-header{
+    width: 50%;
+    margin: 48px auto;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+.solution-title{
+    font-size: 2.5rem;
+}
+.solution-items{
+    width: 80%;
+    margin: 64px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+.solution-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 8px;
+}
+.solution-item h3{
+    margin-top: 24px;
+}
+
+
+.solution-item p{
+    text-align: center;
+    margin: 16px 0px;
+}
+.solution-item ion-icon{
+    color: orangered;
+    font-size: 3rem;
+}
+.solution-item a{
+    color: orangered;
+    text-decoration: none;
+}
+
+
+.about-us-container{
+    width: 80%;
+    margin: 64px auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    /* CSS rules for desktop devices go here */
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules for tablet devices go here */
+  }
+  
+  /* Mobile */
+  @media only screen and (max-width: 767px) {
+    .logo{
+        font-size: 0.75rem;
+    }
+    button{
+        font-family: 'Noto Sans', sans-serif;
+        color: white;
+        background-color: orangered;
+        padding: 4px 12px;
+        font-size: 1rem;
+        font-weight:500;
+        border: 2px solid orangered;
+        border-radius: 50px;
+        outline: none;
+        cursor: pointer;
+        transition: all 400ms;
+    }
+    #nav-menu{
+        display: none;
+    }
+    #close-icon{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+        position: relative;
+    }
+    .hamburger-menu .nav-items{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        gap: 4px;
+        right: 0;
+        top: 50px;
+        box-shadow: 0px 5px 30px -10px gray;
+    }
+    .hamburger-menu .nav-items .nav-item{
+        padding: 1px 24px;
+    }
+    .hamburger-menu .nav-items .nav-item:hover{
+        background-color: orangered;
+    }
+    .hamburger-menu .nav-items .nav-item a:hover{
+        color: white;
+    }
+
+    .banner{
+        width: 80%;
+        margin: auto;
+    }
+    .banner-info{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .sub-title{
+        margin-bottom: 16px;
+        color: orangered;
+    }
+    
+    .title{
+        color: white;
+        font-size: 2rem;
+    
+    }
+    
+    .description{
+        margin-top: 16px;
+        color: white;
+    }
+    .banner-btn{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+        margin-top: 48px;
+    }
+
+    .solution-items{
+        width: 80%;
+        margin: 64px auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 12px;
+    }
+
+  }
