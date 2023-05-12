@@ -228,6 +228,65 @@ ion-icon:hover{
     font-size: 3.5rem;
 }
 
+.service-section{
+    background-color: rgb(231, 249, 255);
+}
+.service-container{
+    width: 80%;
+    margin: auto;
+    padding: 64px 0px;
+    text-align: center;
+}
+.service-container .service-head{
+    width: 70%;
+    margin: auto;
+}
+.service-container div h2{
+    font-size: 3rem;
+}
+.service-container div p{
+    margin: 24px 0px;
+}
+.service-container div span{
+    color: orangered;
+    font-weight: bold;
+}
+
+.services{   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    justify-content: center;
+}
+
+.service{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px;
+}
+.service h3{
+    margin-top: 12px;
+    font-size: 1.5rem;
+}
+.service p{
+    margin: 12px 0px;
+}
+.service a{
+    text-decoration: none;
+    color: orangered;
+}
+.details-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.details-btn ion-icon{
+    color: orangered;
+}
+
 
 
 
@@ -369,6 +428,22 @@ ion-icon:hover{
     .quantity ion-icon{
         color: orangered;
         font-size: 3.5rem;
+    }
+    .service-container .service-head{
+        width: 100%;
+        margin: auto;
+    }
+    .service-container div h2{
+        font-size: 1.5rem;
+    }
+    .services{   
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
+        justify-content: center;
+    }
+    .service h3{
+        font-size: 1rem;
     }
 
   }
