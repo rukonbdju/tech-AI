@@ -514,6 +514,8 @@ ion-icon:hover{
     padding: 8px;
 }
 .blog .bloger-info{
+    font-size: .75rem;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     gap: 12px;
