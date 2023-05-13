@@ -4,8 +4,10 @@ This is a simple static website
 
 ### Which technologies are used to build this project
 
-<ol>
+<ul>
 <li>HTML</li>
 <li>CSS</li>
 <li>JavaScript</li>
-</ol>
+</ul>
+
+[Live Website](https://rukonbdju.github.io/tech-AI/ "Live Website")
