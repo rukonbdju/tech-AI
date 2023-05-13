@@ -140,16 +140,12 @@ ion-icon:hover {
 .solution-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   border: 1px solid gray;
+  gap: 12px;
   border-radius: 4px;
   padding: 8px;
 }
-.solution-item h3 {
-  margin-top: 24px;
-}
 .solution-description {
-  text-align: center;
   margin: 24px 0px;
 }
 
@@ -256,7 +252,6 @@ ion-icon:hover {
 }
 
 .service {
-  text-align: center;
   background-color: white;
   border-radius: 10px;
   padding: 12px;
@@ -399,8 +394,39 @@ margin: auto;
   align-items: center;
 }
 .scientist {
+  transition: all 500ms ease-in-out;
   box-shadow: 0px 1px 10px 1px rgb(203, 203, 203);
   text-align: center;
+}
+.scientist:hover .scientist-logo{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  right: 50%;
+  bottom: 12px;
+  transform: translateX(50%);
+  gap: 8px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+} 
+.scientist-image{
+  position: relative;
+  
+}
+.scientist-logo{
+  transition: all 500ms ease-in-out;
+  display: none;
+}
+.scientist-logo ion-icon{
+  transition: all 300ms ease-in-out;
+  background-color: orangered;
+  color: white;
+  padding: 5px;
+  border-radius: 100%;
+}
+.scientist-logo ion-icon:hover{
+  transform: translateY(-5px);
 }
 .scientist p {
   padding-bottom: 12px;
@@ -436,16 +462,27 @@ margin: auto;
   align-items: center;
 }
 .testimonial {
+  position: relative;
   background-color: white;
   padding: 12px;
   border-radius: 8px;
   box-shadow: 0px 2px 16px 2px rgb(180, 232, 239);
 }
+.testimonial .qoutes{
+  z-index: 1000;
+  max-width:60px ;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.qoutes img{
+  width: 100%;
+  
+}
 .testimonial .client {
   text-align: left;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   gap: 8px;
   align-items: center;
   justify-items: center;
@@ -461,7 +498,7 @@ margin: auto;
   padding: 4px 0px;
   margin: 0px;
 }
-.testimonial img {
+.client .img img {
   border-radius: 100%;
   padding: 2px;
   border: 2px solid orangered;
@@ -958,7 +995,7 @@ footer a:hover {
   }
 
   .about-us h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .statistics .quantity h1 {
@@ -999,6 +1036,9 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
+  }
+  .how-works h2{
+    font-size: 1.5rem;
   }
 
   .projects {
