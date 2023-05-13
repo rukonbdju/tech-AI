@@ -1,8 +1,8 @@
 ## Welcome to TECHAI
 
-This is a simple static website
+This is a simple static responsive website using vanilla CSS and Javascript. 
 
-### Which technologies are used to build this project
+### Which technologies are used to build this project?
 
 <ul>
 <li>HTML</li>
